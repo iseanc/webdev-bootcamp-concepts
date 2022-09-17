@@ -1,0 +1,74 @@
+<!-- REQUIRED: Sole purpose is to ensure that the browser makes a best-effort attempt at following the relevant specifications -->
+<!DOCTYPE html>
+
+<!-- the <html> root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. -->
+<html lang="en">
+
+<!-- The <head> element contains metadata and is NOT displayed -->
+<head>
+    <!-- charset gives the character encoding in which the document is encoded -->
+    <meta charset="UTF-8">
+    <!-- VIEWPORT is the window area where content can be seen.
+    
+    If the rendered page is larger than the viewport, the browser provides scrollbars. 
+
+    Some mobile devices and other narrow screens render pages in a virtual window or viewport, which is usually wider than the screen, and then shrink the rendered result down so it can all be seen at once. 
+    -->
+    <!-- VIEWPORT properties
+        - width: device-width means use the device width
+        - initial-scale=controls zoom level. 1 = 100%
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>REQUIRED: Document Title</title>
+
+    <!-- <link> references external entities, like stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<!-- The <body> HTML element represents the content of an HTML document. There can be only one <body> element in a document. -->
+<body>
+    <!--<header> HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
+    <header>
+        <!-- <h1> to <h6> tags define individual header text of different sizes: size decreases as number increments.
+        Accessibility guidelines indicates to always use these in order to assist in navigation for Assistive Technologies (ATs) -->
+        <h1>Header section with &lt;h1&gt; Heading Text</h1>
+    </header>
+    <!-- The <section> element is used to group content that can stand on its own in its own section. -->
+
+    <!-- OPTIONAL:  <main> represents the dominant content of the <body> of a document. Consists of content directly related to or expands upon the central topic of a document, or the central functionality of an application. 
+    
+    CAN ONLY HAVE ONE VISIBLE <MAIN> AT A TIME -->
+    <main>
+        <!-- The <section> element is used to group content that can stand on its own in its own section. THIS DOES NOT AFFECT DOC VIEW BY DEFAULT.  JUST A LOGICAL GROUPING MECHANISM LIKE <div> OR <span> -->
+
+        <h2>Student Bio</h2>
+        <section>
+        <h3>About Me</h3>
+        <p><strong>Name:</strong> Sean Collins</p>
+        <img src="https://via.placeholder.com/200" alt="Placeholder picture">
+        <p>I'm attending the University of Arizona Coding Bootcamp.  I'm learning skills necessary to become a web developer.</p>
+        </section>
+        <section>
+        <h3>Contact Info</h3>
+        <ul>
+            <li><strong>Email: </strong><a href="mailto:iseanc@hotmail.com">iseanc@hotmail.com</a></li>
+            <li><strong>GitHub Site: </strong><a href="https://github.com/iseanc">https://github.com/iseanc</a></li>
+            <li><strong>Portfolio: </strong><a href="https://github.com/iseanc">COMING SOON!</a></li>
+        </ul>
+        </section>
+        <section>
+            <h3>'h2' Heading with an ORDERED List</h3>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </section>
+    </main>
+    <!-- The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents. -->
+    <footer>
+        <h3>'h3' heading text in a page 'footer'</h3>
+    </footer>
+</body>
+</html>
