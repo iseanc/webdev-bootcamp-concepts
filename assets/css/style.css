@@ -1,0 +1,124 @@
+/* Universal Selector (applies to everything) */
+* {
+    /* Forces all fonts on page to "sans-serif" unless overriden in lower cascade */
+    font-family: sans-serif;
+}
+/* Type selector */
+header {
+    background-color: cadetblue;
+    /* fixes header at top of page (top 0px) */
+    position: fixed;
+    top:0px;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 175%
+}
+/* ID selector preface with #*/
+#section-1 {
+    color: yellow;
+    background-color: purple;
+}
+/* 2 ID selectors grouped with grouping combinator (comma) - applies to all id="section-2" and id="section-3" */
+#section-2, #section-3 {
+    background-color: blue;
+    color:orange
+}
+/* class selector, preface with dot (.) */
+.container {
+    background-color: black;
+}
+
+#section-4, #section-5 {
+    color:white
+}
+
+#section-6 {
+    color:yellow;
+}
+
+.lesson1 {
+    background-color: #fffacd;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+/* Type Selector (applies to elements) with "descendant combinator" (space) */
+nav li {
+    margin: 5px;
+    display:inline;
+}
+
+#fact-1 {
+    font-weight: bold;
+}
+
+#fact-2 {
+    font-size: 24px;
+}
+
+#fact-3 {
+    line-height: 50px;
+}
+
+.css-display-block {
+    border: 5px solid green;
+    background-color:aliceblue;
+    
+}
+
+.css-display-block img {
+    /* display:block stacks the imgs on each other */
+    display: block;
+    /* Give img top/bot margin of 10px, l/r margin of auto centers in parent */
+    width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  /* TODO: Add a margin property */
+    margin: 20px auto;
+  /* TODO: Add a padding property */
+    padding: 20px;
+  /* TODO: Add a border property */
+    border: 10px solid #cb2ad493;
+}
+
+/* Square 1 and 2 */
+.position-container {
+    width: 600px;
+    height: 600px;
+    margin: 20px auto;
+    border: 15px solid bisque;
+  }
+
+  .position-heading {
+    text-align: center;
+  }
+  
+  /* Square 2 */
+  .absolute-container {
+    /* Sets parent element to relative */
+    position: relative;
+  }
+  
+  /* Box 2 in Square 1 */
+  #relative-box-2 {
+    position: relative;
+    /* Offsets box 200px from left to center it */
+    left: 200px;
+  }
+  
+  /* Box 2 in Square 2 */
+  #absolute-box-2 {
+    /* Sets position to absolute */
+    position: absolute;
+    /* Positions box zero length from top of parent container */
+    top: 0;
+    /* Positions box 700px from left of parent container */
+    left: 700px;
+  }
+
+  .contact-label {
+    display: inline;
+    background-color: yellow;
+    min-width:  44px;
+  }
