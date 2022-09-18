@@ -1,0 +1,169 @@
+<!-- REQUIRED: Sole purpose is to ensure that the browser makes a best-effort attempt at following the relevant specifications -->
+<!DOCTYPE html>
+
+<!-- the <html> root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. -->
+<html lang="en">
+
+<!-- The <head> element contains metadata and is NOT displayed -->
+<head>
+    <!-- charset gives the character encoding in which the document is encoded -->
+    <meta charset="UTF-8">
+    <!-- VIEWPORT is the window area where content can be seen.
+    
+    If the rendered page is larger than the viewport, the browser provides scrollbars. 
+
+    Some mobile devices and other narrow screens render pages in a virtual window or viewport, which is usually wider than the screen, and then shrink the rendered result down so it can all be seen at once. 
+    -->
+    <!-- VIEWPORT properties
+        - width: device-width means use the device width
+        - initial-scale=controls zoom level. 1 = 100%
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>REQUIRED: Document Title</title>
+
+    <!-- <link> references external entities, like stylesheets -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<!-- The <body> HTML element represents the content of an HTML document. There can be only one <body> element in a document. -->
+<body>
+    <!--<header> HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements. -->
+    <header>
+        <!-- <h1> to <h6> tags define individual header text of different sizes: size decreases as number increments.
+        Accessibility guidelines indicates to always use these in order to assist in navigation for Assistive Technologies (ATs) -->
+        <h1>Header section with &lt;h1&gt; Heading Text</h1>
+
+        <!-- Navigation menu with <nav> and unordered list -->
+        <p><strong>&lt;nav&gt; Menu &lt;ul&gt; with &lt;li&gt; CSS display:inline</strong></p>
+        <nav>
+            <ul>
+                <li>Click any of these links >>  </li>
+                <li id="item-1"><a href="#aboutme">About Me</a></li>
+                <li id="item-2"><a href="#contact-info">My Contact Info</a></li>
+                <li id="item-3"><a href="#css-styling">CSS Styling</a></li>
+                <li id="item-2"><a href="#contact-form">Contact Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- The <section> element is used to group content that can stand on its own in its own section. -->
+
+    <!-- OPTIONAL:  <main> represents the dominant content of the <body> of a document. Consists of content directly related to or expands upon the central topic of a document, or the central functionality of an application. 
+    
+    CAN ONLY HAVE ONE VISIBLE <MAIN> AT A TIME -->
+    <main>
+        <h2>Student Bio</h2>
+
+        <!-- The <section> element is used to group content that can stand on its own in its own section. THIS DOES NOT AFFECT DOC VIEW BY DEFAULT.  JUST A LOGICAL GROUPING MECHANISM LIKE <div> OR <span> -->
+        <!-- class="lesson" is an element "attribute". The class global attribute is a space-separated list of the case-sensitive classes of the element.
+        
+        Classes allow CSS and JavaScript to select and access specific elements via the class selectors or functions -->
+        <section class="lesson">
+        <h3 id="about-me">About Me</h3>
+        <p><strong>Name:</strong> Sean Collins</p>
+        <img src="./assets/images/image-1.jpg" alt="Placeholder picture">
+        <p>I'm attending the University of Arizona Coding Bootcamp.  I'm learning skills necessary to become a web developer.</p>
+        </section>
+
+        <section class="lesson">
+        <h3 id="contact-info"> My Contact Info</h3>
+        <ul>
+            <!-- id="email" is an "id" attribute. The id global attribute defines an identifier (ID) which MUST be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS). -->
+            <li id="email"><strong>Email: </strong><a href="mailto:iseanc@hotmail.com">iseanc@hotmail.com</a></li>
+            <li id="github"><strong>GitHub Site: </strong><a href="https://github.com/iseanc">https://github.com/iseanc</a></li>
+            <li id="portfolio"><strong>Portfolio: </strong><a href="https://github.com/iseanc">COMING SOON!</a></li>
+        </ul>
+        </section>
+        <section>
+            <h3>'h2' Heading with an ORDERED List</h3>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </section>
+        <h1 id="css-styling">Styling elements with CSS</h1>
+        <p>Styling using "Class Selectors" and "ID Selectors"</p>
+        <section class="lesson" id="section-1">
+            <h2>Section 1</h2>
+          </section>
+      
+          <section class="lesson section-blue" id="section-2">
+            <h2>Section 2</h2>
+          </section>
+      
+          <section class="lesson section-blue" id="section-3">
+            <h2>Section 3</h2>
+          </section>
+      
+        <div class="container">
+            <section id="section-4">
+            <h2>Section 4</h2>
+            </section>
+        
+            <section id="section-5">
+            <h2>Section 5</h2>
+            </section>
+        
+            <section id="section-6">
+            <h2>Section 6</h2>
+            </section>
+
+            <section class="lesson1">
+            <h2>Baby Spiders</h2>
+            <p id="fact-1">A baby spider is called a spiderling 🕷️. </p>
+            </section>
+        
+            <section class="lesson1">
+            <h2>Beds</h2>
+            <p id="fact-2">The word "bed" looks like a bed 🛏️.</p>
+            </section>
+        
+            <section class="lesson1">
+            <h2>Powerful Squirrels</h2>
+            <p id="fact-3">Approximately 10-20% of US power outages 🔌 are caused by squirrels 🐿️.</p>
+            </section>
+        </div>
+        <h1>CSS Display Property and Box Model</h1>
+        <h3>Box = Margin > Border > Padding > Content</h3>
+        <section class="css-display-block">
+            <img src="./assets/images/image-1.png" alt="box with number 1"/>
+            <img src="./assets/images/image-2.png" alt="box with number 2"/> 
+            <img src="./assets/images/image-3.png" alt="box with number 3"/> 
+        </section>
+
+        <h1>Position: Relative and Absolute</h1>
+        <section>
+            <h2 class="position-heading">Square 1: Relative Position</h2>
+            <div class="position-container">
+                <img src="./assets/images/image-1.png" alt="box with number 1"/>
+                <img id="relative-box-2" src="./assets/images/image-2.png" alt="box with number 2"/>
+                <img src="./assets/images/image-3.png" alt="box with number 3"/>
+            </div>
+        </section>
+        
+        <section>
+        <h2 class="position-heading">Square 2: Absolute Position</h2>
+        <div class="position-container absolute-container">
+            <img src="./assets/images/image-1.png" alt="box with number 1"/>
+            <img id="absolute-box-2"src="./assets/images/image-2.png" alt="box with number 2"/>
+            <img src="./assets/images/image-3.png" alt="box with number 3"/>
+        </div>
+        </section>
+
+        <h1 id="contact-form">Contact Form</h1>
+        <form class="contact-form">
+            <label for="name" class="contact-label"><strong>Your Name: </strong></label><input type="name" id="name" class="contact-label">
+            <label for="email" class="contact-label"><strong>Email Address: </strong></label><input type="email" id="email" class="contact-label">
+            <button type="submit" class="">Send</button>
+        </form>
+
+        <h1>Media Queries for Varying Screen Sizes</h1>
+
+    </main>
+    <!-- The <footer> HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents. -->
+    <footer>
+        <h3>'h3' heading text in a page 'footer'</h3>
+    </footer>
+</body>
+</html>
